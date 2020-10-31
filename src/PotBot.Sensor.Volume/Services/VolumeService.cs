@@ -20,6 +20,7 @@ namespace PotBot.Sensor.Volume.Services {
         {
             _clock = clock;
         }
+        
         public int GetVolume()
         {
             var stepNumber =  Ceiling(decimal.Divide(potSize, cupSize));
